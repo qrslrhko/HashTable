@@ -4,31 +4,45 @@
 ##### learn how to generate different number of id and scores
 ```java
 	for(i=0; i<10;i++){
-			int flag = 0;
-			Random rand = new Random();
-			num = rand.nextInt(10)+1;
+		int flag = 0;
+		Random rand = new Random();
+		num = rand.nextInt(10)+1;
+	
+			for( j=0;j<10;j++){
+						
+				if(mylist[j] == num){									
+					i = i-1;
+					flag=1;
+					break;					
+				}
 		
-				for( j=0;j<10;j++){
-							
-					if(mylist[j] == num){									
-						i = i-1;
-						flag=1;
-						break;					
-					}
+			}
 			
-				}
-				
-				if(flag == 0){
-					mylist[i] = num;							
-				}
+			if(flag == 0){
+				mylist[i] = num;							
+			}
 					
 		}
 ```
-##### how to store id and score array into the hash table
+##### how to integrate through a list 
+this method is from http://crunchify.com/how-to-iterate-through-java-list-4-way-to-iterate-through-loop/
 ```java
-		for(i=0;i<10; i++){
-		hmap.put(mylist[i],student_socre[i]) ;
-		}
+	Iterator iterator_1 = h_set.iterator();
+	while (iterator_1.hasNext()){
+		Map.Entry whole_map = (Map.Entry)iterator_1.next();
+		System.out.print("ID: " + whole_map.getKey());
+		System.out.print("   Score is :" +whole_map.getValue());
+		System.out.println("   ");
+		
+	}
+```java
+
+
+##### how to store id and score arrays into the hash table
+```java
+	for(i=0;i<10; i++){
+	hmap.put(mylist[i],student_socre[i]) ;
+	}
 ```
 ##### how to pass arguments to other classes
 
