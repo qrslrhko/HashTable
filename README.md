@@ -26,6 +26,7 @@
 ```
 ##### how to integrate through a list 
 this method is from http://crunchify.com/how-to-iterate-through-java-list-4-way-to-iterate-through-loop/
+
 ```java
 	Iterator iterator_1 = h_set.iterator();
 	while (iterator_1.hasNext()){
@@ -35,7 +36,7 @@ this method is from http://crunchify.com/how-to-iterate-through-java-list-4-way-
 		System.out.println("   ");
 		
 	}
-```java
+```
 
 
 ##### how to store id and score arrays into the hash table
