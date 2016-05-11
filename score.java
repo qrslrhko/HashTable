@@ -5,7 +5,6 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
-
 public class score {
 
 	int[] mylist = new int[10];
@@ -53,11 +52,8 @@ public class score {
 		
 			for(j=0; j<10 ; j++){
 				if(student_socre[j] == str){
-		
 						i = i-1;
 						flag_s = 1;
-						
-						
 				}
 			}
 			if(flag_s ==0){
@@ -77,8 +73,6 @@ public class score {
 		for(i=0;i<10; i++){
 		hmap.put(mylist[i],student_socre[i]) ;
 		}		
-		
-		
 		//Iterator iterator =	h_set.iterator();  // this is like a loop function
 		
 		// dispaly contents by iterator function
@@ -90,17 +84,15 @@ public class score {
 //			System.out.println("Score is :" +Entry.getValue());
 //			//System.out.printf(" ID:" + Entry.getKey(), " Score is: " + Entry.getValue());
 //		}
-						
 	}
 			
-		
 	public void printResult(){
 //		for(i=0;i<10;i++){
 //		System.out.print("Student " +mylist[i]);
 //		System.out.print(" ");
 //		System.out.println("score is : " +student_socre[i]);
 //		}
-//		
+		
 		// this is like a loop function
 		Iterator iterator_1 = h_set.iterator();
 		while (iterator_1.hasNext()){
@@ -108,13 +100,9 @@ public class score {
 			System.out.print("ID: " + whole_map.getKey());
 			System.out.print("   Score is :" +whole_map.getValue());
 			System.out.println("   ");
-			
 		}
 		
-		
-		
 	}
-
 
 	public static void main(String args[]){
 		
@@ -124,15 +112,7 @@ public class score {
 	AAA.randomScore();
 	AAA.hashTable();
 	AAA.printResult();
-			
-			
-	
-		
-		
+
 	}
 
 }
-
-
-
-
